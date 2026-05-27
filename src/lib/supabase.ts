@@ -83,4 +83,7 @@ export const supabase = {
   forUser: createUserClient,
 };
 
+// Direct export for admin client (used by services)
+export const supabaseAdmin = getServiceClient();
+
 export default supabase;
